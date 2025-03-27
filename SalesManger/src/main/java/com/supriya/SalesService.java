@@ -82,10 +82,10 @@ public class SalesService {
 	        System.out.println("users "+Thread.currentThread().getName());
 	        return CompletableFuture.completedFuture(restTemplate.getForEntity(apiUrl, String.class));
 	    }
-	    @Async
+	   /* @Async
 	    public CompletableFuture<ResponseEntity<String>> fetchUser11() {
 	        String apiUrl = "https://jsonplaceholder.typicode.com/users";
 	        System.out.println("users "+Thread.currentThread().getName());
 	        return CompletableFuture.completedFuture(restTemplate.getForEntity(apiUrl, String.class));
-	    }
+	    }*/
 }
