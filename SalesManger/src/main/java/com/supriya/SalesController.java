@@ -59,7 +59,7 @@ public class SalesController {
 	    public ResponseEntity<String> performNonBlockingTask() {
 	        s.fetchPosts();
 	        s.fetchUsers();
-	        /*s.fetchUser1();
+	        s.fetchUser1();
 	        s.fetchUser2();
 	        s.fetchUser3();
 	        s.fetchUser4();
@@ -69,7 +69,7 @@ public class SalesController {
 	        s.fetchUser8();
 	        s.fetchUser9();
 	        s.fetchUser10();
-	        s.fetchUser11();*/
+	        s.fetchUser11();
 
 	        // Main thread does some work while API calls run asynchronously
 	        String mainThreadTask = "Main thread did some quick processing!";
